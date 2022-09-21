@@ -1,0 +1,438 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #1b9c1b;
+  --secondary: #1b1b1b;
+  --background: rgb(219, 252, 189);
+  --altbackground: rgb(235, 233, 233);
+  --tertiary: #ffffff;
+}
+
+.dark-mode {
+  --primary: #1b9c1b;
+  --secondary: #ffffff;
+  --background: #1b1b1b;
+  --altbackground: #1b1b1b;
+  --tertiary: #1b1b1b;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  color: var(--secondary);
+}
+
+h1 {
+  font-size: 3rem !important;
+  font-weight: bold;
+}
+
+h1,
+h2 {
+  font-family: "Anton", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: var(--secondary);
+}
+
+ul {
+  list-style: none;
+}
+
+.container .title {
+  font-size: 14px;
+  color: var(--secondary);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.container .subtitle {
+  font-size: 36px;
+  color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 10px 0;
+}
+
+.container .line {
+  width: 100px;
+  height: 3px;
+  background-color: var(--primary);
+}
+
+#switch {
+  font-size: 24px;
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+/* Nav */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 0;
+  background-color: var(--background);
+  z-index: 2;
+}
+
+nav .link:hover {
+  color: var(--primary);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+nav .btn {
+  background-color: var(--primary);
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+nav .btn:hover {
+  opacity: 0.9;
+  color: lightgray;
+}
+
+.nav-wrapper,
+.switch-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  flex: 1;
+}
+
+.logo img {
+  height: 60px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0px;
+}
+
+.menu li {
+  text-transform: capitalize;
+  padding: 0px 10px;
+}
+
+/* Hero Section */
+.hero-section {
+  background-color: var(--background);
+  background-image: url("./assets/images/hero-bg.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  height: 100vh;
+  padding: 50px 0;
+}
+
+.hero-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.hero-wrapper div {
+  flex: 1;
+}
+
+.hero-wrapper h1 {
+  font-size: 80px;
+  color: var(--primary);
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.hero-wrapper p {
+  font-size: 18px;
+  margin: 20px 0 30px 0;
+}
+.hero-wrapper .btn {
+  background: var(--primary);
+  color: #ffffff;
+  border: 1px solid var(--primary);
+  padding: 15px 25px;
+  border-radius: 25px;
+  display: inline-block;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.hero-wrapper .btn:hover {
+  background: transparent;
+  color: var(--secondary);
+}
+
+.hero-wrapper img {
+  max-width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Services Section */
+.services-section {
+  background-color: var(--altbackground);
+  padding: 50px 0;
+}
+
+.card-title {
+  font-family: "Anton", sans-serif;
+  font-size: 20px;
+  color: var(--primary);
+  text-transform: uppercase;
+}
+
+.card-text {
+  font-size: 16px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.services-wrapper .card-body {
+  background-color: var(--background);
+  position: relative;
+  height: 300px;
+}
+
+.icon-wrapper {
+  width: 70px;
+  height: 70px;
+  border-radius: 35px;
+  background-color: #ffffff;
+  border: 2px solid var(--primary);
+  position: absolute;
+  top: -35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-icon {
+  width: 45px;
+  height: 45px;
+}
+
+/* Partners Section */
+.partners-section {
+  background-color: var(--tertiary);
+}
+
+.partners-section h2 {
+  color: var(--primary);
+}
+
+.partners-section img {
+  object-position: center;
+  object-fit: cover;
+  max-width: 100%;
+}
+
+/* About Us Section */
+
+.about-us-section {
+  background-color: var(--primary);
+}
+
+.about-us-bg {
+  background-image: url("./assets/images/frieght.jpg");
+  max-width: 100%;
+  background-position: center;
+  background-size: cover;
+  flex: 0.5;
+}
+
+.about-us-content-wrapper {
+  background-color: var(--primary);
+  flex: 0.5;
+  /* gap: 20px; */
+}
+
+.about-us-card {
+  position: relative;
+}
+
+.about-us-card-body {
+  width: 60%;
+  color: #ffffff;
+  margin-left: 40px;
+}
+
+.about-us-card-title {
+  font-family: "Anton", sans-serif;
+  font-size: 18px;
+}
+
+.about-us-card .icon-wrapper {
+  top: 0;
+  left: -30px;
+  width: 60px;
+  height: 60px;
+  background-color: rgb(219, 252, 189);
+}
+
+.about-us-card ion-icon {
+  font-size: 40px;
+  color: #000000;
+}
+
+.about-content-bg-trans {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 70%;
+}
+
+.about-content-bg-trans .title {
+  font-size: 14px;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.about-content-bg-trans .subtitle {
+  font-size: 22px;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 10px 0;
+}
+
+.about-content-bg-trans .line {
+  width: 100px;
+  height: 3px;
+  background-color: var(--primary);
+}
+
+.about-us-text-content {
+  color: #ffffff;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+  background-color: var(--tertiary);
+}
+
+.testimonials-section .item {
+  width: 100%;
+}
+
+.testimonials-section .avatar {
+  width: 70px !important;
+  height: 70px;
+}
+
+.testimonials-section .left-quote {
+  width: 30px !important;
+  height: 30px;
+}
+
+.testimonials-section .card {
+  background-color: rgb(219, 252, 189);
+}
+
+.testimonials-section p {
+  color: #000000;
+}
+
+.testimonials-section .staff-name {
+  font-family: "Anton", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+  color: var(--primary);
+}
+
+.testimonials-section .company-name {
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+/* footer section */
+
+.footer {
+  background-image: url("./assets/images/111.jpg");
+  background-blend-mode: darken;
+  background-color: rgba(0, 0, 0, 0.9);
+  background-size: cover;
+  background-position: center;
+}
+
+.footer .logo {
+  height: 60px;
+  object-fit: contain;
+}
+
+.footer .icon-container {
+  border: 2px solid var(--primary);
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.footer ion-icon {
+  width: 35px;
+  height: 35px;
+  color: var(--primary);
+}
+
+.footer .heading {
+  font-style: italic;
+  font-weight: bold;
+  color: var(--primary);
+}
+
+.footer p {
+  margin: 0px;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.footer hr {
+  border-style: inset;
+  border-width: 1px;
+}
+
+.footer .left-content,
+.footer .middle-content,
+.footer .right-content {
+  width: 350px;
+}
+
+.footer ul {
+  padding: 0;
+}
+
+.footer a {
+  color: #ffffff;
+}
+
+.footer h5 {
+  color: var(--primary);
+  text-transform: uppercase;
+  font-family: "Anton", sans-serif;
+  letter-spacing: 2px;
+}
+
+footer {
+  background-color: var(--primary);
+}
+
+footer p {
+  margin: 0;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+footer ion-icon {
+  width: 25px;
+  height: 25px;
+  /* color: #ffffff; */
+}
