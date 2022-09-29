@@ -8,10 +8,10 @@
 
 :root {
   --primary: #1b9c1b;
-  --secondary: #1b1b1b;
-  --background: rgb(219, 252, 189);
-  --altbackground: rgb(235, 233, 233);
-  --tertiary: #ffffff;
+  --secondary: #ffffff;
+  --background: #1b1b1b;
+  --altbackground: #1b1b1b;
+  --tertiary: #1b1b1b;
 
   /* font-sizes */
   --fs-100: 0.875rem;
@@ -25,12 +25,12 @@
   --fs-900: 3rem;
 }
 
-.dark-mode {
+.light-mode {
   --primary: #1b9c1b;
-  --secondary: #ffffff;
-  --background: #1b1b1b;
-  --altbackground: #1b1b1b;
-  --tertiary: #1b1b1b;
+  --secondary: #1b1b1b;
+  --background: rgb(219, 252, 189);
+  --altbackground: rgb(235, 233, 233);
+  --tertiary: #ffffff;
 }
 
 html {
@@ -113,11 +113,11 @@ html {
 }
 
 .card2 {
-  transition-delay: 2000ms;
+  transition-delay: 1700ms;
 }
 
 .card3 {
-  transition-delay: 2500ms;
+  transition-delay: 2000ms;
 }
 
 body {

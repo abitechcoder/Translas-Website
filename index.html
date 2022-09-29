@@ -44,7 +44,7 @@
           </ul>
           <div style="display: flex">
             <div class="switch-wrapper">
-              <ion-icon name="moon-outline" id="switch"></ion-icon>
+              <ion-icon name="sunny" id="switch"></ion-icon>
             </div>
             <div class="hamburger">
               <div class="line"></div>
@@ -102,7 +102,7 @@
           </div>
           <div class="about-us-content-wrapper d-flex flex-column gap-5 py-5">
             <div class="about-us-card">
-              <div class="icon-wrapper">
+              <div class="icon-wrapper fader card1">
                 <ion-icon name="earth-outline"></ion-icon>
               </div>
               <div class="about-us-card-body from-down slider card1">
@@ -114,7 +114,7 @@
             </div>
 
             <div class="about-us-card">
-              <div class="icon-wrapper">
+              <div class="icon-wrapper fader card2">
                 <ion-icon name="time-outline"></ion-icon>
               </div>
               <div class="about-us-card-body from-down slider card2">
@@ -126,7 +126,7 @@
             </div>
 
             <div class="about-us-card">
-              <div class="icon-wrapper">
+              <div class="icon-wrapper fader card3">
                 <img src="./assets/images/support.png" style="width: 35px; height: 35px" alt="">
               </div>
               <div class="about-us-card-body from-down slider card3">
@@ -156,20 +156,20 @@
                 <div class="icon-wrapper">
                   <img src="./assets/images/lorry.png" alt="" class="card-icon">
                 </div>
-                <h5 class="card-title">Transportation and Distribution</h5>
-                <p class="card-text py-2 lh-lg">This involves moving goods from one point to another. We also support our clients with product distribution solutions across Ghana and beyond.</p>
+                <h5 class="card-title from-down slider">Transportation and Distribution</h5>
+                <p class="card-text py-2 lh-lg from-down slider delay-2">This involves moving goods from one point to another. We also support our clients with product distribution solutions across Ghana and beyond.</p>
               </div>
             </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4">
-              <div class="card fader card">
+              <div class="card fader">
               <img src="./assets/images/pack.jpg" class="card-img-top" alt="...">
               <div class="card-body pt-5 pb-3">
                 <div class="icon-wrapper">
                   <img src="./assets/images/package.png" alt="" class="card-icon">
                 </div>
-                <h5 class="card-title">Warehousing</h5>
-                <p class="card-text py-2 lh-base">We store and protect the goods for our clients in our network of warehouses. These facilities are equipped with electronic gates, remotely-monitored CCTV systems, fire alarms, smoke detectors, and emergency exits. They are also manned by a well-trained team of security service personnel and warehousing experts.</p>
+                <h5 class="card-title from-down slider">Warehousing</h5>
+                <p class="card-text py-2 lh-ba from-down slider delay-2se">We store and protect the goods for our clients in our network of warehouses. These facilities are equipped with electronic gates, remotely-monitored CCTV systems, fire alarms, smoke detectors, and emergency exits. They are also manned by a well-trained team of security service personnel and warehousing experts.</p>
               </div>
             </div>
             </div>
@@ -180,8 +180,8 @@
                 <div class="icon-wrapper">
                   <img src="./assets/images/ship.png" alt="" class="card-icon">
                 </div>
-                <h5 class="card-title">Frieght Forwarding</h5>
-                <p class="card-text py-2 lh-lg">Translas covers the imports, exports, customs and delivery needs of its wide range of clients. This includes both medium and large scale requests from a manufacturer or producer to a market, customer or end-point of distribution.</p>
+                <h5 class="card-title from-down slider">Frieght Forwarding</h5>
+                <p class="card-text py-2 lh-lg from-down slider delay-2">Translas covers the imports, exports, customs and delivery needs of its wide range of clients. This includes both medium and large scale requests from a manufacturer or producer to a market, customer or end-point of distribution.</p>
               </div>
             </div>
             </div>
@@ -192,8 +192,8 @@
                 <div class="icon-wrapper">
                   <img src="./assets/images/trolley.png" alt="" class="card-icon">
                 </div>
-                <h5 class="card-title">Forklift Hire</h5>
-                <p class="card-text py-2 lh-lg">We offer a number of forklift solutions to support varying gaps in the logistics process.</p>
+                <h5 class="card-title from-down slider">Forklift Hire</h5>
+                <p class="card-text py-2 lh-lg from-down slider delay-2">We offer a number of forklift solutions to support varying gaps in the logistics process.</p>
               </div>
             </div>
             </div>
@@ -204,8 +204,8 @@
                 <div class="icon-wrapper">
                   <img src="./assets/images/box.png" alt="" class="card-icon">
                 </div>
-                <h5 class="card-title">Packaging</h5>
-                <p class="card-text py-2 lh-lg">Our packaging services extend to in-warehouse packaging for storage and distribution or packaging for transport and delivery.</p>
+                <h5 class="card-title from-down slider">Packaging</h5>
+                <p class="card-text py-2 lh-lg from-down slider delay-2">Our packaging services extend to in-warehouse packaging for storage and distribution or packaging for transport and delivery.</p>
               </div>
             </div>
             </div>
@@ -349,11 +349,11 @@
     <script>
       const icon = document.getElementById("switch");
       icon.onclick = function () {
-        document.body.classList.toggle("dark-mode");
-        if (document.body.classList.contains("dark-mode")) {
-          icon.name = "sunny";
-        } else {
+        document.body.classList.toggle("light-mode");
+        if (document.body.classList.contains("light-mode")) {
           icon.name = "moon-outline";
+        } else {
+          icon.name = "sunny";
         }
       };
     </script>
