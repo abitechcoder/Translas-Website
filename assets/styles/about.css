@@ -1,0 +1,104 @@
+.about-hero-section {
+  background-image: url("../images/forklift.jpg");
+  padding: 120px 0px 80px 0px;
+  background-blend-mode: darken;
+  background-color: rgba(0, 0, 0, 0.9);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.about-hero-wrapper h1 {
+  color: var(--primary);
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: var(--fs-900);
+  width: 70%;
+}
+
+.about-hero-wrapper p {
+  font-size: var(--fs-400);
+  margin: 20px 0 10px 0;
+  text-align: center;
+  color: #ffffff;
+}
+
+.about-breadcrumbs-wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.about-hero-section ol {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 15px 10px;
+}
+
+ol > li a {
+  color: var(--primary);
+}
+
+ol > li a:hover {
+  opacity: 0.7;
+  color: var(--primary);
+}
+
+ol > li + li::before {
+  content: "/";
+  padding-right: 10px;
+}
+
+ol > li + li {
+  padding-left: 10px;
+}
+
+/* Services Section */
+.core-values-section {
+  background-color: var(--altbackground);
+  padding: 50px 0;
+}
+
+.core-values-section .card {
+  background-color: var(--altbackground);
+  border-color: var(--secondary);
+}
+
+.core-values-section .icon-wrapper-container {
+  position: absolute;
+  top: -35px;
+  width: calc(100% - 32px);
+  display: flex;
+  justify-content: center;
+}
+
+.core-values-section .about-icon-wrapper {
+  width: 70px;
+  height: 70px;
+  border-radius: 35px;
+  background-color: #ffffff;
+  border: 2px solid var(--primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.core-values-section .card-body {
+  height: 390px;
+}
+
+/* Mobile Layout  */
+@media screen and (max-width: 767.98px) {
+  .about-hero-wrapper h1 {
+    font-size: var(--fs-600);
+    width: 90%;
+  }
+
+  .about-hero-wrapper p {
+    font-size: var(--fs-200);
+  }
+}
