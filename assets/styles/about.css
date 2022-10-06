@@ -91,6 +91,43 @@ ol > li + li {
   height: 390px;
 }
 
+/* FAQ Styles */
+
+.faq-section {
+  background-color: var(--background);
+}
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.accordion-item {
+  background-color: var(--altbackground);
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: var(--primary);
+  color: #ffffff;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url("../images/chevron-down-white.svg");
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.accordion-button:focus {
+  border-color: #ffffff;
+  box-shadow: 0 0 0 0.25rem rgb(255, 255, 255 / 25%);
+}
+
+.accordion-header {
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+}
+
 /* Mobile Layout  */
 @media screen and (max-width: 767.98px) {
   .about-hero-wrapper h1 {
