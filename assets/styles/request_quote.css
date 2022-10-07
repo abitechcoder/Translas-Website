@@ -1,0 +1,145 @@
+.quote-hero-section {
+  background-image: url("../images/frieght.jpg");
+  padding: 120px 0px;
+  background-blend-mode: darken;
+  background-color: rgba(0, 0, 0, 0.9);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.quote-hero-wrapper h1 {
+  color: var(--primary);
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: var(--fs-900);
+  width: 70%;
+}
+
+.quote-breadcrumbs-wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.quote-hero-section ol {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 15px 10px;
+}
+
+ol > li a {
+  color: var(--primary);
+}
+
+ol > li a:hover {
+  opacity: 0.7;
+  color: var(--primary);
+}
+
+ol > li + li::before {
+  content: "/";
+  padding-right: 10px;
+}
+
+ol > li + li {
+  padding-left: 10px;
+  color: #fff;
+}
+
+/* Request a Quote Section Styles */
+.get-a-quote {
+  padding: 80px 0;
+  background-color: var(--background);
+}
+
+.get-a-quote .quote-bg {
+  min-height: 500px;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../images/quote-bg.jpg);
+}
+
+.get-a-quote form {
+  padding: 40px;
+  height: 100%;
+}
+
+.get-a-quote form h3 {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--primary);
+}
+
+.get-a-quote form h4 {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--primary);
+  margin: 20px 0 0 0;
+}
+
+.get-a-quote form p {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: var(--secondary);
+}
+
+.get-a-quote form input,
+.get-a-quote form textarea {
+  box-shadow: none;
+  font-size: 14px;
+}
+
+.loading {
+  display: none;
+}
+
+.loading img {
+  width: 50px;
+  height: 50px;
+}
+
+.sent-message {
+  display: none;
+  background: var(--primary);
+  color: #ffffff;
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 24px;
+  font-weight: 600;
+}
+
+.get-a-quote form button[type="submit"] {
+  background: var(--primary);
+  border: 0;
+  padding: 10px 30px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 4px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+/* Mobile Layout  */
+@media screen and (max-width: 767.98px) {
+  .about-hero-wrapper h1 {
+    font-size: var(--fs-600);
+    width: 90%;
+  }
+
+  .get-a-quote form {
+    padding: 20px;
+  }
+
+  .get-a-quote .quote-bg {
+    min-height: 200px;
+  }
+}

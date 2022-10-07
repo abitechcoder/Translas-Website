@@ -56,6 +56,28 @@ html {
   z-index: 100;
 }
 
+/* Scroll To Top Button Styles */
+#btnScrollToTop {
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: #ffffff;
+  background: #000000;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.25);
+  display: none;
+  z-index: 5;
+}
+
+#btnScrollToTop ion-icon {
+  font-size: 25px;
+}
+
 /* Animation Styles */
 
 .from-up {
@@ -596,11 +618,13 @@ footer ion-icon {
     padding: 50px 0;
     filter: blur(5px);
     transition: all 1s;
+    display: none;
   }
 
   .menu.active {
     opacity: 1;
     filter: blur(0);
+    display: block;
   }
 
   .menu > li {

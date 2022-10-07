@@ -4,6 +4,7 @@ const navigation = document.querySelector("nav");
 const loader = document.getElementById("preloader");
 const hamburger = document.querySelector(".hamburger");
 const menu = document.querySelector(".menu");
+const scrollToTopBtn = document.querySelector("#btnScrollToTop");
 
 const options = {
   root: null,
@@ -41,7 +42,13 @@ window.addEventListener("load", function () {
 window.addEventListener("scroll", function () {
   if (window.scrollY >= 60) {
     navigation.classList.add("nav-scrollable");
+    scrollToTopBtn.style.display = "block";
   } else {
     navigation.classList.remove("nav-scrollable");
+    scrollToTopBtn.style.display = "none";
   }
+});
+
+scrollToTopBtn.addEventListener("click", function () {
+  $("html, body").animate({ scrollTop: 0 }, "slow");
 });

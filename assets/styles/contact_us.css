@@ -1,0 +1,182 @@
+.contact-hero-section {
+  background-image: url("../images/contact-us.jpg");
+  padding: 120px 0px;
+  background-blend-mode: darken;
+  background-color: rgba(0, 0, 0, 0.8);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.contact-hero-wrapper h1 {
+  color: var(--primary);
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: var(--fs-900);
+  width: 70%;
+}
+
+.contact-hero-wrapper p {
+  font-size: var(--fs-400);
+  margin: 20px 0 10px 0;
+  text-align: center;
+  color: #ffffff;
+}
+
+.contact-breadcrumbs-wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.contact-hero-section ol {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 15px 10px;
+}
+
+ol > li a {
+  color: var(--primary);
+}
+
+ol > li a:hover {
+  opacity: 0.7;
+  color: var(--primary);
+}
+
+ol > li + li::before {
+  content: "/";
+  padding-right: 10px;
+}
+
+ol > li + li {
+  padding-left: 10px;
+  color: #fff;
+}
+
+/* Request a Quote Section Styles */
+.contact-us-section {
+  padding: 80px 0;
+  background-color: var(--background);
+}
+
+.contact-us-section form {
+  height: 100%;
+  padding-top: 30px;
+}
+
+.contact-us-section form h3 {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--primary);
+}
+
+.contact-us-section form h4 {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--primary);
+  margin: 20px 0 0 0;
+}
+
+.contact-us-section form p {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: var(--secondary);
+}
+
+.contact-us-section form input,
+.contact-us-section form textarea {
+  box-shadow: none;
+  font-size: 14px;
+}
+
+.loading {
+  display: none;
+}
+
+.loading img {
+  width: 50px;
+  height: 50px;
+}
+
+.sent-message {
+  display: none;
+  background: var(--primary);
+  color: #ffffff;
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 24px;
+  font-weight: 600;
+}
+
+.contact-us-section form button[type="submit"] {
+  background: var(--primary);
+  border: 0;
+  padding: 10px 30px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 4px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.contact-info {
+  padding-top: 30px;
+}
+
+.contact-info .info-item + .info-item {
+  margin-top: 40px;
+}
+
+.contact-info .info-item i {
+  font-size: 20px;
+  background: var(--primary);
+  color: #fff;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out;
+  margin-right: 15px;
+}
+
+.contact-info .info-item h4 {
+  padding: 0;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: var(--secondary);
+}
+
+.contact-info .info-item p {
+  padding: 0;
+  margin-bottom: 0;
+  font-size: 14px;
+  color: var(--secondary);
+}
+
+/* Mobile Layout  */
+@media screen and (max-width: 767.98px) {
+  .about-hero-wrapper h1 {
+    font-size: var(--fs-600);
+    width: 90%;
+  }
+
+  /* .contact-us-section form {
+    padding: 20px;
+  } */
+
+  .contact-us-section .quote-bg {
+    min-height: 200px;
+  }
+}
