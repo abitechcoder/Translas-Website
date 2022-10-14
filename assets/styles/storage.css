@@ -1,5 +1,5 @@
-.about-hero-section {
-  background-image: url("../images/forklift.jpg");
+.storage-hero-section {
+  background-image: url("../images/warehousing.jpg");
   padding: 120px 0px 80px 0px;
   background-blend-mode: darken;
   background-color: rgba(0, 0, 0, 0.9);
@@ -9,7 +9,7 @@
   min-height: 400px;
 }
 
-.about-hero-wrapper h1 {
+.storage-hero-wrapper h1 {
   color: var(--primary);
   letter-spacing: 4px;
   text-transform: uppercase;
@@ -18,26 +18,26 @@
   width: 70%;
 }
 
-.about-us-content {
-  width: 50%;
+.storage-content {
+  width: 70%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-.about-us-content > i {
+.storage-content > i {
   font-size: 30px;
 }
 
-.about-hero-wrapper p {
+.storage-content > p {
   font-size: var(--fs-300);
   margin: 0px 0 10px 0;
   text-align: center;
   color: #ffffff;
 }
 
-.about-breadcrumbs-wrapper {
+.storage-breadcrumbs-wrapper {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -45,7 +45,7 @@
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-.about-hero-section ol {
+.storage-hero-section ol {
   list-style: none;
   display: flex;
   margin: 0;
@@ -71,26 +71,20 @@ ol > li + li {
   color: #fff;
 }
 
-/* Services Section */
-.core-values-section {
-  background-color: var(--altbackground);
-  padding: 50px 0;
+.main-content {
+  background-color: var(--background);
+  padding: 80px 0;
 }
 
-.core-values-section .card {
-  background-color: var(--altbackground);
-  border-color: var(--secondary);
+.card-body {
+  min-height: 250px;
 }
 
-.core-values-section .icon-wrapper-container {
-  position: absolute;
-  top: -35px;
-  width: calc(100% - 32px);
-  display: flex;
-  justify-content: center;
+.card-text {
+  color: #000000;
 }
 
-.core-values-section .about-icon-wrapper {
+.storage-icon-wrapper {
   width: 70px;
   height: 70px;
   border-radius: 35px;
@@ -101,22 +95,31 @@ ol > li + li {
   align-items: center;
 }
 
-.core-values-section .card-body {
-  height: 390px;
+.storage-icon-wrapper > img {
+  width: 35px;
+  height: 35px;
 }
 
 /* Mobile Layout  */
 @media screen and (max-width: 767.98px) {
-  .about-hero-wrapper h1 {
+  .storage-hero-wrapper h1 {
     font-size: var(--fs-600);
     width: 90%;
   }
 
-  .about-hero-wrapper p {
+  .storage-hero-wrapper p {
     font-size: var(--fs-200);
   }
 
-  .about-us-content {
+  .storage-content {
     width: 100%;
+  }
+
+  .gap {
+    gap: 20px;
+  }
+
+  .container h2.subtitle {
+    font-size: var(--fs-600);
   }
 }
