@@ -37,6 +37,13 @@
   color: #ffffff;
 }
 
+.about-hero-wrapper .btn {
+  background-color: var(--primary);
+  color: #ffffff;
+  font-size: var(--fs-300);
+  font-weight: bold;
+}
+
 .about-breadcrumbs-wrapper {
   position: absolute;
   bottom: 0;

@@ -5,6 +5,18 @@ const loader = document.getElementById("preloader");
 const hamburger = document.querySelector(".hamburger");
 const menu = document.querySelector(".menu");
 const scrollToTopBtn = document.querySelector("#btnScrollToTop");
+// Grab all navigation links on page
+const navLinks = document.querySelectorAll(".menu a");
+// Get the Current path of the active page
+const activePage = window.location.pathname;
+
+navLinks.forEach((link) => {
+  if (link.href.includes(`${activePage}`)) {
+    if (!(link.className == "btn")) {
+      link.classList.add("active");
+    }
+  }
+});
 
 const options = {
   root: null,

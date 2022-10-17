@@ -236,6 +236,12 @@ nav .link {
   color: #ffffff;
 }
 
+.active {
+  color: var(--primary) !important;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
 nav .link:hover {
   color: var(--primary);
   font-weight: bold;
@@ -300,7 +306,6 @@ nav .btn:hover {
 
 /* Hero Section */
 .hero-section {
-  background-image: url("./assets/images/111.jpg");
   background-blend-mode: darken;
   background-color: rgba(0, 0, 0, 0.9);
   background-size: cover;
@@ -310,12 +315,33 @@ nav .btn:hover {
   padding: 50px 0;
 }
 
+.slide1 {
+  background-image: url("./assets/images/111.jpg");
+}
+
+.slide2 {
+  background-image: url("./assets/images/444.jpg");
+}
+
+.slide3 {
+  background-image: url("./assets/images/frieght.jpg");
+}
+
+.slide4 {
+  background-image: url("./assets/images/forklift.jpg");
+}
+
+.slide5 {
+  background-image: url("./assets/images/warehousing.jpg");
+}
+
 .hero-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 30px;
+  height: 100%;
 }
 
 .hero-wrapper div {
@@ -395,6 +421,10 @@ nav .btn:hover {
 .card-icon {
   width: 45px;
   height: 45px;
+}
+
+.card-img-top {
+  height: 213px;
 }
 
 /* Partners Section */
