@@ -119,12 +119,13 @@
             </div>
           </div>
           <div class="col-lg-8 fader delay-2">
-            <form method="post">
+            <form method="POST">
               <div class="row gy-4">
                 <div class="col-md-6">
                   <input
                     type="text"
                     name="name"
+                    id="name"
                     class="form-control"
                     placeholder="Name"
                     required=""
@@ -136,6 +137,7 @@
                     type="email"
                     class="form-control"
                     name="email"
+                    id="email"
                     placeholder="Email"
                     required=""
                   />
@@ -145,6 +147,7 @@
                     type="text"
                     class="form-control"
                     name="subject"
+                    id="subject"
                     placeholder="Subject"
                     required=""
                   />
@@ -154,6 +157,7 @@
                   <textarea
                     class="form-control"
                     name="message"
+                    id="message"
                     rows="6"
                     placeholder="Message"
                     required=""
@@ -170,7 +174,11 @@
                   <div class="sent-message">
                     Your quote request has been sent successfully. Thank you!
                   </div>
-                  <button type="submit">Send Message</button>
+                  <input
+                    type="button"
+                    id="submit-button"
+                    value="Send Message"
+                  />
                 </div>
               </div>
             </form>
@@ -274,6 +282,34 @@
         </div>
       </div>
     </footer>
+
+    <script type="text/javascript">
+      function sendEmail() {
+        const name = $("#name");
+        const email = $("#email");
+        const subject = $("#subject");
+        const message = $("#message");
+
+        $.ajax({
+          url: "contact.php",
+          method: "POST",
+          dataType: "json",
+          data: {
+            name: name.val(),
+            email: email.val(),
+            subject: subject.val(),
+            message: message.val(),
+          },
+          success: function (response) {
+            if (response.status == "success") {
+              alert("Email has been sent");
+            } else {
+              alert("Please try again later");
+            }
+          },
+        });
+      }
+    </script>
 
     <script>
       const icon = document.getElementById("switch");

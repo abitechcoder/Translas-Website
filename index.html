@@ -169,16 +169,23 @@
     <!-- Partners Section -->
     <section class="partners-section">
       <div class="container py-5">
-        <h2 class="pb-3 fader">Trusted by thousands of businesses and happy customers</h2>
-      <div class="row gy-3">
-        <div class="col-6 col-md-3 partner-logo fader"><img src="./assets/images/unilever.jpg" alt=""></div>
-        <div class="col-6 col-md-3 partner-logo fader"><img src="./assets/images/jb.jpg" alt=""></div>
-        <div class="col-6 col-md-3 partner-logo fader"><img src="./assets/images/profix.jpg" alt=""></div>
-        <div class="col-6 col-md-3 partner-logo fader"><img src="./assets/images/sg.jpg" alt=""></div>
-        <div class="col-6 col-md-3 partner-logo fader"><img src="./assets/images/nina-logo.jpg" alt=""></div>
-        <div class="col-6 col-md-3 partner-logo fader"><img src="./assets/images/coca-cola.jpg" alt=""></div>
-        <div class="col-6 col-md-3 partner-logo fader"><img src="./assets/images/nesstra-logo.jpg" alt=""></div>
-      </div>
+        <div class="partners-header-carousel owl-carousel owl-theme">
+          <div class="item">
+            <h2 class="pb-3 fader">Trusted by Local and International Businesses and Customers</h2>
+          </div>
+          <div class="item">
+            <h2 class="pb-3 fader">Trusted by thousands of business and happy customers</h2>
+          </div>
+        </div>
+        <div class="partners-carousel owl-carousel owl-theme">
+          <div class="item partner-logo"><img src="./assets/images/unilever.jpg" alt=""></div>
+          <div class="item partner-logo"><img src="./assets/images/jb.jpg" alt=""></div>
+          <div class="item partner-logo"><img src="./assets/images/profix.jpg" alt=""></div>
+          <div class="item partner-logo"><img src="./assets/images/sg.jpg" alt=""></div>
+          <div class="item partner-logo"><img src="./assets/images/nina-logo.jpg" alt=""></div>
+          <div class="item partner-logo"><img src="./assets/images/coca-cola.jpg" alt=""></div>
+          <div class="item partner-logo"><img src="./assets/images/nesstra-logo.jpg" alt=""></div>
+        </div>
       </div>
     </section>
 
@@ -338,7 +345,7 @@
           <h2 class="subtitle">What they say</h2>
           <div class="line"></div>
         </div>
-        <div class="owl-carousel owl-theme py-5">
+        <div class="testimonial-carousel owl-carousel owl-theme py-5">
           <div class="item">
             <div class="card d-flex flex-column p-3 gap-2">
             <img src="./assets/images/avatar.png" class="avatar" alt="">
@@ -542,7 +549,7 @@
     <script src="./assets/owlcarousel/owl.carousel.min.js"></script>
 
     <script>
-      $(".owl-carousel").owlCarousel({
+      $(".testimonial-carousel").owlCarousel({
         loop: true,
         margin: 10,
         nav: true,
@@ -557,6 +564,42 @@
           },
           1000: {
             items: 2,
+          },
+        },
+      });
+
+      $(".partners-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        stagePadding: 30,
+        smartSpeed: 450,
+        autoplay: true,
+        autoplayTimeout: 1000,
+        autoplayHoverPause: true,
+        responsive: {
+          0: {
+            items: 2,
+          },
+          768: {
+            items: 4,
+          },
+        },
+      });
+
+      $(".partners-header-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: false,
+        dots: false,
+        stagePadding: 0,
+        smartSpeed: 450,
+        autoplay: true,
+        autoplayTimeout: 1000,
+        autoplayHoverPause: true,
+        responsive: {
+          0: {
+            items: 1,
           },
         },
       });
