@@ -790,11 +790,11 @@ footer ion-icon {
 /* Mobile Layout  */
 @media screen and (max-width: 767.98px) {
   .hero-wrapper h1 {
-    font-size: var(--fs-500);
+    font-size: var(--fs-600);
   }
 
   .hero-wrapper p {
-    font-size: var(--fs-100);
+    font-size: var(--fs-200);
   }
 
   .container .subtitle {
