@@ -799,7 +799,7 @@ footer ion-icon {
 /* Mobile Layout  */
 @media screen and (max-width: 767.98px) {
   #company-name {
-    font-size: var(--fs-600);
+    font-size: 2rem;
   }
 
   .hero-wrapper h1 {
