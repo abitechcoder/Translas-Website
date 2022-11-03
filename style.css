@@ -356,6 +356,10 @@ nav .btn:hover {
   height: 100%;
 }
 
+#company-name {
+  font-size: 4rem;
+}
+
 .hero-wrapper div {
   display: flex;
   flex-direction: column;
@@ -794,6 +798,10 @@ footer ion-icon {
 
 /* Mobile Layout  */
 @media screen and (max-width: 767.98px) {
+  #company-name {
+    font-size: var(--fs-600);
+  }
+
   .hero-wrapper h1 {
     font-size: var(--fs-600);
   }
